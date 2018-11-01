@@ -11,10 +11,10 @@ document.getElementById("confirmBtn").addEventListener('tap', function() {
 document.getElementById("tixian").addEventListener('tap', function() {
 	var btnArray = ['取消', '去设置'];
 	mui.confirm('', '为保障您的资金安全，请先设置交易密码', btnArray, function(e) {
-		if (e.index == 0) {
-			info.innerText = '';
+		if (e.index == 1) {
+			window.location.href = 'static/setting/tradingpsd.html';
 		} else {
-			console.log(window)
+			
 		}
 	})
 });
@@ -22,10 +22,10 @@ document.getElementById("tixian").addEventListener('tap', function() {
 document.getElementById("tel").addEventListener('tap', function() {
 	var btnArray = ['取消', '呼叫'];
 	mui.confirm('', '400-086-0909', btnArray, function(e) {
-		if (e.index == 0) {
-			info.innerText = '';
+		if (e.index == 1) {
+			window.location.href='tel:400-086-0909';
 		} else {
-			info.innerText = ''
+
 		}
 	})
 });

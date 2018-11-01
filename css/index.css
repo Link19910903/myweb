@@ -91,7 +91,7 @@
 .server {
   background-color: #F6F6F6;
   border-top: 1px solid #ccc;
-  padding-top: 2rem;
+  padding: 2rem 0;
 }
 .txtcenter {
   text-align: center;
