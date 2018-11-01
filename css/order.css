@@ -1,0 +1,25 @@
+.mui-bar .mui-btn-link {
+	color:#1B1B1B;
+}
+.mui-bar {
+	background-color: #fff;
+	position:static;
+}
+
+.mui-btn-blue.mui-active:enabled, .mui-btn-blue:enabled:active, .mui-btn-primary.mui-active:enabled, .mui-btn-primary:enabled:active, input[type=submit].mui-active:enabled, input[type=submit]:enabled:active {
+	border :0;
+	color: #818181;
+}
+.mui-bar-nav {
+	box-shadow: none;
+}
+.mui-card {
+	margin: 0;
+	box-shadow: none;
+}
+.mt {
+  margin-top: 0.8rem;
+}
+.mui-table-view-cell>a:not(.mui-btn) {
+	white-space: pre-wrap;
+}

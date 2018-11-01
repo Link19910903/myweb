@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+	    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+	    <meta name="apple-mobile-web-app-capable" content="yes"/>
+	    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+	    <title>修改交易密码</title>
+	    <link rel="stylesheet" href="assets/font/iconfont.css">
+	    <link href="../../assets/mui/css/mui.min.css" rel="stylesheet"/>
+	    <link rel="stylesheet" href="../../css/changelogin.css">
+	    <link rel="stylesheet" href="../../css/base.css">
+    </head>
+    <body>
+    	<header id="header" class="mui-bar mui-bar-nav">
+			<h1 class="mui-title"></h1>
+		<a class="mui-action-back mui-btn mui-btn-blue mui-btn-link mui-btn-nav mui-pull-left" href="setting.html">
+				<span class="mui-icon mui-icon-left-nav"></span>
+				修改交易密码			
+			</a>
+		</header>
+		<div class="mui-content">
+	        <form class="mui-input-group">
+	            <div class="mui-input-row">
+	                <label>当前登陆密码</label>
+	                <input type="password" class="mui-input-clear mui-input" placeholder="请输入当前登陆密码"/>
+	            </div>
+	            <div class="mui-input-row">
+	                <label>新登陆密码</label>
+	                <input type="password" class="mui-input-clear mui-input" placeholder="请输入8位新交易密码"/>
+	            </div>
+	            <div class="mui-input-row ">
+	                <label>确认新密码</label>
+	                <input type="password" class="mui-input-clear mui-input" placeholder="请确认8位新交易密码"/>
+	            </div>
+	        </form>
+	        <p >
+	        	<i class="iconfont icon-warn"></i>
+	        	当前交易密码输入错误
+	        </p>
+	        <div class="mui-content-padded">
+	            <button class="mui-btn mui-btn-block mui-btn-danger border-radius">确认</button>
+	        </div>
+	    </div>
+    </body>
+</html>

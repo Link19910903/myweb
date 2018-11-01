@@ -1,0 +1,130 @@
+﻿body {
+  background-color: #F6F6F6;
+}
+.mui-card {
+  margin: 0px;
+}
+.mui-card-content-inner {
+  padding: 15px 10px;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.mt {
+  margin-top: 1rem;
+}
+.order {
+  display: flex;
+  justify-content: center;
+}
+.order div {
+  padding: 0.6rem 0.8rem;
+}
+.order p {
+  text-align: center;
+}
+.order .ico {
+  font-size: 2rem;
+  color: #FF7D45;
+}
+
+.gsyh .ico {
+  vertical-align: top;
+  font-size: 1.4rem;
+  color: #E50012;
+}
+.logout {
+  font-size: 0.9rem;
+  color:#A9A9A9;
+}
+.tx {
+  text-align: center;
+  color:#FF9464;
+  width: 3.5rem;
+  height: 1.5rem;
+  line-height: 1.5rem;
+  border:1px solid #FF9464;
+  border-radius: 0.2rem;
+}
+.bb {
+  border-bottom: 1px solid #F4F4F4;
+}
+.br {
+  border-right :1px solid #F4F4F4;
+}
+.num  {
+    width: 10rem;
+    height: 5rem;
+    padding: 1rem 1rem;
+}
+
+.mui-card{
+  box-shadow: none;
+}
+.nums {
+  /* height: 10rem; */
+}
+.bank {
+  width: 80%;
+  margin: 0 auto;
+}
+.bank p {
+  margin: 0;
+  padding: 0;
+}
+.gsyh {
+  width: 100%;
+  height: 5rem;
+  background-color: #F3E2B4;
+  border-radius: 5px 5px 0 0;
+}
+.cardnum {
+  text-align: center;
+}
+.server p {
+  margin: 0;
+  padding: 0;
+}
+.server {
+  background-color: #F6F6F6;
+  border-top: 1px solid #ccc;
+  padding-top: 2rem;
+}
+.txtcenter {
+  text-align: center;
+}
+.contack {
+  margin: 0 auto;
+  color:#FF9464;
+  width: 5.5rem;
+  height: 1.8rem;
+  line-height: 1.8rem;
+  border:1px solid #FF9464;
+  border-radius: 1.2rem;
+}
+.mui-content{
+  background-color: #fff;
+}
+.mui-btn-blue, .mui-btn-primary, input[type=submit] {
+  border:0px;
+}
+.mui-btn-outlined.mui-btn-blue, .mui-btn-outlined.mui-btn-primary {
+  color:#808992;
+}
+.mui-popup-title {
+  font-size: 1rem;
+}
+.mui-popup-button{
+  color: #AFAFAF;
+  font-size: 1rem;
+}
+.mui-popup-title {
+  color:#727272;
+}
+.mui-popup-button.mui-popup-button-bold{
+  font-weight: 400;
+  color:#FF7C42;
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html class="ui-page-login">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <title>饲料渠道</title>
+    <link href="assets/mui/css/mui.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="assets/font/iconfont.css">
+    <script src="assets/zepto/zepto.min.js"></script>
+    
+    
+</head>
+<body>
+    <div class="content">
+        <div class="mui-card">
+            <div class="mui-card-header">
+                <img src="images/lx.png" alt="">
+                <!-- <div class="logout">退出登陆</div> -->
+                <div class="mui-content">
+                    <div class="mui-content-padded" style="margin: 5px;text-align: center;">
+                        <button id="confirmBtn" type="button" class="mui-btn mui-btn-blue mui-btn-outlined">退出登录</button>
+                        <div id="info"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="mui-card-content">
+                <div class="mui-card-content-inner">
+                    <i></i>
+                    <p>中粮(北京)饲料科技有限公司黄石分公司</p>
+                    <div class="fl">
+                        <p>账户余额(元)</p>
+                        <p>0.00</p>
+                    </div>
+                    <div class="fr tx" id="tixian">提现</div>
+                </div>
+            </div>
+        </div>
+        <div class="mui-card mt nums" >
+            <div class="fl num bb br">
+                <p>待结算金额(元)</p>
+                <p>0.00</p>
+            </div>
+            <div class="fl num bb">
+                <p>累计成交金额(元)</p>
+                <p>0.00</p>
+            </div>
+            <div class="fl num br">
+                <p>待发货(笔)</p>
+                <p>0</p>
+            </div>
+            <div class="fl num">
+                <p>累计成交订单(元)</p>
+                <p>0</p>
+            </div>
+            
+        </div>
+        <div class="mui-card mt order">
+            <div>
+                <a href="static/order/myorder.html">
+                    <div class="iconfont icon-dingdan ico"></div>
+                    <p>我的订单</p>
+                </a>
+            </div>
+            <div>
+                <a href="">
+                    <div class="iconfont icon-shangpin ico"></div>
+                    <p>我的商品</p>
+                </a>
+            </div>
+            <div>
+                <a href="">
+                    <div class="iconfont icon-jiaoyi ico"></div>
+                    <p>交易记录</p>
+                </a>
+            </div>
+            <div>
+                <a href="static/setting/setting.html">
+                    <div class="iconfont icon-shezhi ico"></div>
+                    <p>设置</p>
+                </a>              
+            </div>       
+        </div>
+        
+        <div class="mui-card mt">
+            <div class="mui-card-content bank">
+                <p>我的结算卡</p>
+                <div class="gsyh">
+                    <p ><i class="iconfont icon-gongshangyinhang ico"></i>工商银行</p>
+                    <p class="cardnum">6272 **** **** *** 1263</p>
+                </div>
+            </div>
+            <div class="server">
+                <div id="tel" class="txtcenter contack">联系客服</div>
+                <p class="txtcenter">(周一至周五 9:00-19:00)</p>
+            </div>
+        </div>   
+    </div>
+
+    <script src="assets/mui/js/mui.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

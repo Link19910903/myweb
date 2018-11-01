@@ -1,0 +1,17 @@
+body {
+	font-size: 1rem;
+	color:#6F6F6F;
+}
+.mui-bar .mui-btn-link {
+	color:#1B1B1B;
+}
+.mui-bar {
+	/* position:static; */
+}
+.change {
+	margin-top:3rem;
+}
+.mui-bar {
+	background-color: #fff;
+}
+
