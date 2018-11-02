@@ -14,7 +14,6 @@ document.getElementById("tixian").addEventListener('tap', function() {
 		if (e.index == 1) {
 			window.location.href = 'static/setting/tradingpsd.html';
 		} else {
-			
 		}
 	})
 });
