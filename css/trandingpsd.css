@@ -6,3 +6,15 @@
         line-height:30px;
         color: #fb4746;
 	}
+
+.icon-warn {
+	color:#FF2E2E;
+}
+.message {
+	height: 1.2rem;
+}
+p {
+	font-size: 12px;
+	margin-top: 1rem;
+	padding-left: 1rem;
+}
