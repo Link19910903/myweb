@@ -18,7 +18,7 @@
 	border:none;
 }
 .mui-slider .mui-slider-group .mui-slider-item {
-	background-color: pink;
+	/*background-color: pink;*/
 }
 .mui-slider-indicator.mui-segmented-control {
 	border-top: 1px solid #F2F2F2;
@@ -28,4 +28,11 @@
 }
 .mui-slider-item .mui-control-content .mui-active {
 	min-height: 1000px;
+}
+.mui-control-content {
+	height: 100rem;
+}
+.mui-card {
+	box-shadow: none;
+	margin:0.5rem 0;
 }
