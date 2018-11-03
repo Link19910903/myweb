@@ -112,8 +112,16 @@ function pwdRepeatValidator(){
 function validateForm(){
   //判断表单是否通过验证
   if(!mobilelValidator()||!pwdValidator()||!pwdRepeatValidator()){
+    // document.getElementById("check-btn").disabled = "disabled";
     return false;
   }else{
+    // document.getElementById("check-btn").disabled = "";
   }
   return true;
+}
+//判断按钮是否可以点击
+function isclick(){
+  if (validateForm()) {
+    document.getElementById("check-btn").disabled = "";
+  }
 }

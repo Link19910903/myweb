@@ -29,7 +29,9 @@
             <div class="mui-input-row">
                 <label>验证码</label>
                 <input id="code" type="text" class="mui-input" placeholder="请输入验证码"/ name="vcode" maxlength="6" onblur="codeValidator()">
-                <div class="hqyzm">获取验证码</div>
+                <div class="hqyzm" id="getcode">
+                    <input type="button" id="btn" value="获取验证码" onclick="settime(this)" />
+                </div>
             </div>
             <div class="mui-input-row">
                 <label>交易密码</label>
@@ -37,7 +39,7 @@
             </div>
             <div class="mui-input-row">
                 <label>确认交易密码</label>
-                <input id="pwdRepeat" type="password" class="mui-input-clear mui-input" placeholder="请确认6位交易密码"/ name="check" maxlength="6" onblur="pwdRepeatValidator()">
+                <input id="pwdRepeat" type="password" class="mui-input-clear mui-input" placeholder="请确认6位交易密码"/ name="check" maxlength="6" onblur="pwdRepeatValidator()" onkeyup="if(this.value.length==6){isclick()}">
             </div>
         </form>
         <div class="message">
@@ -45,11 +47,12 @@
         </div>
 
         <div class="mui-content-padded">
-            <button id="check-btn" class="mui-btn mui-btn-block mui-btn-danger border-radius">确认</button>
+            <button id="check-btn" class="mui-btn mui-btn-block mui-btn-danger border-radius" disabled="disabled">确认</button>
         </div>
     </div>
      <script src="../../assets/mui/js/mui.min.js"></script>
     <script src="../../assets/zepto/zepto.min.js"></script>
     <script type="text/javascript" language="javascript" src="../../js/trandingpsd.js"></script>
+    <script type="text/javascript" src="../../js/settime.js" ></script>
     </body>
 </html>
