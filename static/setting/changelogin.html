@@ -5,42 +5,47 @@
 	    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
 	    <meta name="apple-mobile-web-app-capable" content="yes"/>
 	    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
-	    <title>修改登陆密码</title>
+	    <title>修改登录密码</title>
 	    <link rel="stylesheet" href="assets/font/iconfont.css">
 	    <link href="../../assets/mui/css/mui.min.css" rel="stylesheet"/>
 	    <link rel="stylesheet" href="../../css/changelogin.css">
 	    <link rel="stylesheet" href="../../css/base.css">
+	    <link rel="stylesheet" href="../../css/trandingpsd.css">
+        <link rel="stylesheet" href="../../assets/font/iconfont.css">
+	    <script src="../../assets/mui/js/mui.min.js"></script>
+	    <script src="../../assets/zepto/zepto.min.js"></script>
+	    <script src="../../js/changelogin.js"></script>
     </head>
     <body>
     	<header id="header" class="mui-bar mui-bar-nav">
 			<h1 class="mui-title"></h1>
-		<a class="mui-action-back mui-btn mui-btn-blue mui-btn-link mui-btn-nav mui-pull-left" href="setting.html">
+		<a class="mui-action-back mui-btn mui-btn-blue mui-btn-link mui-btn-nav mui-pull-left" href="../../index.html">
 				<span class="mui-icon mui-icon-left-nav"></span>
-					修改登陆密码
+				修改登录密码
 			</a>
 		</header>
-		<div class="mui-content psd">
-	        <form class="mui-input-group">
-	            <div class="mui-input-row">
-	                <label>当前登陆密码</label>
-	                <input type="password" class="mui-input-clear mui-input" placeholder="请输入当前登陆密码"/>
-	            </div>
-	            <div class="mui-input-row">
-	                <label>新登陆密码</label>
-	                <input type="password" class="mui-input-clear mui-input" placeholder="请输入8位新交易密码"/>
-	            </div>
-	            <div class="mui-input-row ">
-	                <label>确认新密码</label>
-	                <input type="password" class="mui-input-clear mui-input" placeholder="请确认8位新交易密码"/>
-	            </div>
-	        </form>
-	        <p >
-	        	<i class="iconfont icon-warn"></i>
-	        	当前登陆密码输入错误
-	        </p>
-	        <div class="mui-content-padded">
-	            <button class="mui-btn mui-btn-block mui-btn-danger border-radius">确认</button>
-	        </div>
-	    </div>
+		<div class="mui-content">
+        <form class="mui-input-group">
+            <div class="mui-input-row">
+                <label>当前登录密码</label>
+                <input id="oldPassword" type="password" class="mui-input-clear mui-input" placeholder="请输入当前登录密码"/ name="password" maxlength="8" onblur="oldpwdValidator()">
+            </div>
+            <div class="mui-input-row">
+                <label>新登录密码</label>
+                <input id="password" type="password" class="mui-input-clear mui-input" placeholder="请输入8位新登录密码"/ name="password" maxlength="8" onblur="pwdValidator()">
+            </div>
+            <div class="mui-input-row">
+                <label>确认新密码</label>
+                <input id="pwdRepeat" type="password" class="mui-input-clear mui-input" placeholder="请确认8位新交易密码"/ name="check" maxlength="8" onblur="pwdRepeatValidator()">
+            </div>
+        </form>
+        <div class="message">
+            <p id="msg" class="msg"></p>
+        </div>
+
+        <div class="mui-content-padded">
+            <button id="check-btn" class="mui-btn mui-btn-block mui-btn-danger border-radius">确认</button>
+        </div>
+    </div>
     </body>
 </html>
