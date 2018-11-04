@@ -1,3 +1,13 @@
-/* .mui-bar-nav~.mui-content {
-	padding: ;
-} */
+.bank span {
+    display: block;
+}
+
+#getmoneys {
+	padding-left: 2rem;
+    width: 80%;
+    height: 2rem;
+    line-height: 24px;
+    font-size: 2rem;
+    padding: 5px 8px;
+    border: 1px solid #FEFEFE;
+}

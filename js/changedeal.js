@@ -11,7 +11,7 @@ function oldpwdValidator(){
   var value = $("#oldPassword").val();
   var msg = $("#msg");
   if(value==""||value==null){
-    msg.text("密码不能为空");
+    msg.text("请输入当前交易密码");
     msg.attr("class","error");
     msg.attr("class","iconfont icon-warn");
     return false;
@@ -95,7 +95,13 @@ function validateForm(){
   if(!oldpwdValidator()||!pwdValidator()||!pwdRepeatValidator()){
     return false;
   }else{
-    alert('通过验证')
+
   }
   return true;
+}
+//判断按钮是否可以点击
+function isclick(){
+  if (validateForm()) {
+    document.getElementById("check-btn").disabled = "";
+  }
 }

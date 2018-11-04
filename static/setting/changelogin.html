@@ -19,10 +19,10 @@
     <body>
     	<header id="header" class="mui-bar mui-bar-nav">
 			<h1 class="mui-title"></h1>
-		<a class="mui-action-back mui-btn mui-btn-blue mui-btn-link mui-btn-nav mui-pull-left" href="../../index.html">
+		      <a class="mui-action-back mui-btn mui-btn-blue mui-btn-link mui-btn-nav mui-pull-left" href="../../index.html">
 				<span class="mui-icon mui-icon-left-nav"></span>
 				修改登录密码
-			</a>
+			 </a>
 		</header>
 		<div class="mui-content">
         <form class="mui-input-group">
@@ -36,7 +36,7 @@
             </div>
             <div class="mui-input-row">
                 <label>确认新密码</label>
-                <input id="pwdRepeat" type="password" class="mui-input-clear mui-input" placeholder="请确认8位新交易密码"/ name="check" maxlength="8" onblur="pwdRepeatValidator()">
+                <input id="pwdRepeat" type="password" class="mui-input-clear mui-input" placeholder="请确认8位新交易密码"/ name="check" maxlength="8" onblur="pwdRepeatValidator()" onkeyup="if(this.value.length==8){isclick()}">
             </div>
         </form>
         <div class="message">
@@ -44,7 +44,7 @@
         </div>
 
         <div class="mui-content-padded">
-            <button id="check-btn" class="mui-btn mui-btn-block mui-btn-danger border-radius">确认</button>
+            <button id="check-btn" class="mui-btn mui-btn-block mui-btn-danger border-radius" disabled="disabled">确认</button>
         </div>
     </div>
     </body>
