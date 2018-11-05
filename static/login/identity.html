@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+	    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+	    <meta name="apple-mobile-web-app-capable" content="yes"/>
+	    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+	    <title>设置交易密码</title>
+	    <link rel="stylesheet" href="../../assets/font/iconfont.css">
+	    <link href="../../assets/mui/css/mui.min.css" rel="stylesheet"/>
+	    <link rel="stylesheet" href="../../css/changelogin.css">
+	    <link rel="stylesheet" href="../../css/base.css">
+	    <link rel="stylesheet" href="../../css/trandingpsd.css">
+        <link rel="stylesheet" type="text/css" href="../../css/identity.css">
+    </head>
+    <body>
+    	<header id="header" class="mui-bar mui-bar-nav">
+			<h1 class="mui-title"></h1>
+		<a class="mui-action-back mui-btn mui-btn-blue mui-btn-link mui-btn-nav mui-pull-left" href="../../index.html">
+				<span class="mui-icon mui-icon-left-nav"></span>
+				设置交易密码
+			</a>
+		</header>
+        <div class="mui-content">
+            <div class="mt">我们已发送 <span class="black">验证码</span> 至您的手机</div>
+            <div class="mt">152 0114 1360</div>
+        </div>
+		<div class="mui-content" style="padding-top: 20px">
+            <form class="mui-input-group">
+
+                <div class="mui-input-row">
+                    <label>验证码</label>
+                    <input id="code" type="text" class="mui-input" placeholder="请输入验证码"/ name="vcode" maxlength="6" onblur="codeValidator()" onkeyup="if(this.value.length==6){isclick()}">
+                    <div class="hqyzm" id="getcode">
+                        <input type="button" id="btn" value="获取验证码" onclick="settime(this)" />
+                    </div>
+                </div>
+
+            </form>
+            <div class="message">
+                <p id="msg" class="msg"></p>
+            </div>
+
+            <div class="mui-content-padded">
+                <button id="check-btn" class="mui-btn mui-btn-block mui-btn-danger border-radius" disabled="disabled">确认</button>
+            </div>
+        </div>
+     <script src="../../assets/mui/js/mui.min.js"></script>
+    <script src="../../assets/zepto/zepto.min.js"></script>
+    <script type="text/javascript" language="javascript" src="../../js/identity.js"></script>
+    <script type="text/javascript" src="../../js/settime.js" ></script>
+    </body>
+</html>

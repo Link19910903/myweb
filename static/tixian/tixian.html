@@ -1,46 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8"/>
-	    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
-	    <meta name="apple-mobile-web-app-capable" content="yes"/>
-	    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
-	    <title>提现</title>
-	    <link rel="stylesheet" href="../../assets/font/iconfont.css">
-	    <link href="../../assets/mui/css/mui.min.css" rel="stylesheet"/>
-	    <!-- <link rel="stylesheet" href="../../css/changelogin.css"> -->
-	    <link rel="stylesheet" href="../../css/base.css">
-	    <link rel="stylesheet" type="text/css" href="../../css/tixian.css">
-	    <link rel="stylesheet" type="text/css" href="../../css/reset.css">
-	    <link rel="stylesheet" type="text/css" href="../../css/weichat.css">
-    </head>
-    <body>
-    	<header id="header" class="mui-bar mui-bar-nav">
-			<h1 class="mui-title"></h1>
-			<a class="mui-action-back mui-btn mui-btn-blue mui-btn-link mui-btn-nav mui-pull-left" href="../../index.html">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <title>提现</title>
+    <link rel="stylesheet" href="../../assets/font/iconfont.css">
+    <link href="../../assets/mui/css/mui.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../../css/changelogin.css">
+    <link rel="stylesheet" href="../../css/base.css">
+    <link rel="stylesheet" type="text/css" href="../../css/tixian.css">
+    <link rel="stylesheet" type="text/css" href="../../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../../css/weichat.css">
+</head>
+<body onload="init()">
+    <header id="header" class="mui-bar mui-bar-nav">
+        <h1 class="mui-title"></h1>
+        <a class="mui-action-back mui-btn mui-btn-blue mui-btn-link mui-btn-nav mui-pull-left" href="../../index.html">
 				<span class="mui-icon mui-icon-left-nav"></span>
 				提现
 			</a>
-		</header>
-	    <div class="mui-content">
-	    	<div class="tixian-box">
+    </header>
+    <div class="mui-content">
+        <div class="tixian-box">
             <div class="tobank">
                 <span class="dzyh">结算卡</span>
                 <span class="yhk">农业银行(1575)</span>
                 <span class="dz">T+1日到帐</span>
             </div>
-            <div class="t-moneys">
+            <div class="t-moneys mui-content">
                 <span class="txje">提现金额</span>
                 <span class="rmb fl bank">￥</span>
-                <span class="kyye">可提现金额：￥1000000.00，<a href="javascript:;" id="getall">全部提现</a></span>
-                <input type="text" id="getmoneys" class="t-input fr">
-                <button id="getout">下一步</button>
+                <span class="kyye">
+                	可提现金额：￥1000000.00，
+                	<a href="javascript:;" id="getall">
+	                	全部提现
+	                </a>
+	            </span>
+                <input type="tel" id="getmoneys" class="t-input fr">
+                <button id="getout" type="button" disabled="disabled">下一步</button>
             </div>
         </div>
-	    </div>
+    </div>
+    <!-- 弹出密码输入框 -->
+    <div id="popup" class="mui-popup mui-popup-in" style="display: none;">
+        <div class="mui-popup-inner">
+            <div class="mui-popup-title bt">请输入交易密码</div>
+            <div class="mui-popup-text">
+                提现金额
+                <div class="jine">
+                    ￥1000.5
+                </div>
+            </div>
+            <div class="pwd-box">
+                <input type="tel" maxlength="6" class="pwd-input" id="pwd-input" onkeyup="if(this.value.length==6){checkpsd()}" autofocus="autofocus">
+                <div class="fake-box">
+                    <input type="password" readonly="">
+                    <input type="password" readonly="">
+                    <input type="password" readonly="">
+                    <input type="password" readonly="">
+                    <input type="password" readonly="">
+                    <input type="password" readonly="">
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+        <!-- <div class="mui-popup-buttons">
+            <span class="mui-popup-button">确定</span>
+            <span class="mui-popup-button mui-popup-button-bold">取消</span>
+        </div> -->
+    <!-- 遮罩层 -->
+    <div id="backdrop" class="mui-popup-backdrop mui-active" style="display:none"></div>
+    <script type="text/javascript" src="../../assets/zepto/zepto.min.js"></script>
+    <script type="text/javascript" src="../../js/setsuccess.js"></script>
+    <script type="text/javascript" src="../../assets/mui/js/mui.min.js"></script>
+    <script type="text/javascript" src="../../js/tixian.js"></script>
+</body>
 
-	    <script type="text/javascript" src="../../assets/zepto/zepto.min.js"></script>
-	    <script type="text/javascript" src="../../js/setsuccess.js"></script>
-	    <script type="text/javascript" src="../../js/tixian.js" ></script>
-    </body>
 </html>

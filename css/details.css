@@ -1,0 +1,37 @@
+.box {
+	display : flex;
+	justify-content: space-between;
+	padding: 0.5rem;
+}
+.box p {
+	padding-right: 2rem;
+}
+.mui-bar-nav~.mui-content {
+	color: #fff;
+	padding-top: 0px;
+	background-color: #FF8A2D;
+	height: 4rem;
+	line-height: 4rem;
+}
+.item {
+	position: relative;
+	padding: 0.8rem;
+}
+.tupian {
+	width: 6rem;
+}
+.chanpin {
+	width: 65%;
+	position: absolute;
+	top: 1rem;
+	left: 8rem;
+}
+.sl {
+	position: absolute;
+	top: 4rem;
+}
+.sr {
+	position: absolute;
+	top: 4rem;
+	left: 12rem;
+}

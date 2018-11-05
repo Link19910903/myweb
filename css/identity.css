@@ -1,0 +1,12 @@
+
+.mt {
+	margin: 0 auto;
+	width: 80%;
+	text-align: center;
+}
+.mui-bar-nav~.mui-content {
+	padding-top: 4rem;
+}
+.black {
+	color: #000;
+}

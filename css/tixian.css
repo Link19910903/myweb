@@ -3,11 +3,69 @@
 }
 
 #getmoneys {
-	padding-left: 2rem;
+    padding-left: 2rem;
     width: 80%;
     height: 2rem;
     line-height: 24px;
     font-size: 2rem;
     padding: 5px 8px;
     border: 1px solid #FEFEFE;
+}
+
+.mui-content {
+    /* display: inline-block; */
+}
+
+.hidden {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.jine {
+    font-size: 1.2rem;
+}
+
+/* 密码输入框样式 */
+.pwd-box {
+    width: 100%;
+    padding-left: 1px;
+    position: relative;
+    border: 1px solid #9f9fa0;
+    border-radius: 3px;
+    over-flow: hidden
+}
+
+.pwd-box input[type="tel"] {
+    width: 99%;
+    height: 45px;
+    color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: none;
+    font-size: 18px;
+    opacity: 0;
+    z-index: 1;
+    letter-spacing: 35px;
+}
+.fake-box {
+	display: flex;
+	justify-content: center;
+}
+.fake-box input {
+	padding: 0;
+    width: 38px;
+    height: 40px;
+    border: none;
+    border-right: 1px solid #e5e5e5;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 0;
+}
+
+.fake-box input:nth-last-child(1) {
+    border: none;
 }
