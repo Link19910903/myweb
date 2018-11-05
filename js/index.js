@@ -29,3 +29,13 @@ document.getElementById("tel").addEventListener('tap', function() {
 	})
 });
 
+//点击同意按钮隐藏协议
+document.getElementById("agree").addEventListener('tap',function(){
+    $('#popup').attr('style','display: none')
+    $('#backdrop').attr('style','display: none')
+})
+// $('#agree').on('tap',fuction(){
+// 	$('#popup').attr('style','display: none')
+//     $('#backdrop').attr('style','display: none')
+// })
+

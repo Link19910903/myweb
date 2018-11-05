@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html class="ui-page-login">
+
 <head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
-    <meta name="apple-mobile-web-app-capable" content="yes"/>
-    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
     <title>饲料渠道</title>
-    <link href="assets/mui/css/mui.min.css" rel="stylesheet"/>
+    <link href="assets/mui/css/mui.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="assets/font/iconfont.css">
     <link rel="stylesheet" type="text/css" href="css/base.css">
     <script src="assets/zepto/zepto.min.js"></script>
 </head>
+
 <body>
     <div class="content">
         <div class="mui-card">
@@ -36,7 +38,7 @@
                 </div>
             </div>
         </div>
-        <div class="mui-card mt nums" >
+        <div class="mui-card mt nums">
             <div class="fl num bb br">
                 <p>待结算金额(元)</p>
                 <p>0.00</p>
@@ -80,12 +82,11 @@
                 </a>
             </div>
         </div>
-
         <div class="mui-card mt">
             <div class="mui-card-content bank">
                 <p>我的结算卡</p>
-                <div class="gsyh">
-                    <p ><i class="iconfont icon-gongshangyinhang ico"></i>工商银行</p>
+                <div class="yhk">
+                    <p><i class="icon"><img src="images/结算卡_中行 icon.png"></i>工商银行</p>
                     <p class="cardnum">6272 **** **** *** 1263</p>
                 </div>
             </div>
@@ -95,8 +96,22 @@
             </div>
         </div>
     </div>
-
+    <div id="popup" class="mui-popup mui-popup-in" style="display: none;">
+        <div class="mui-popup-inner" id="xieyi">
+            <div class="mui-popup-title bt">领鲜平台服务协议</div>
+            <div class="mui-popup-text gray">
+                .提示条款 <br>
+                欢迎您与各饲料厂经营者 (详见定义条款) 共同签属本<<领鲜平台服务协议>> (以下简称"本协议") 并使用领鲜平台服务!<br>
+                各服务条款前所列索引关键词仅为帮助您理解该条款表达的主旨之用,不影响或限制本协议条款的含义或解释.为维护您自身权益,建议您仔细阅读各条款具体表述.欢迎您与各饲料厂经营者 (详见定义条款) 共同签属本<<领鲜平台服务协议>> (以下简称"本协议") 并使用领鲜平台服务!<br>
+                各服务条款前所列索引关键词仅为帮助您理解该条款表达的主旨之用,不影响或限制本协议条款的含义或解释.为维护您自身权益,建议您仔细阅读各条款具体表述.欢迎您与各饲料厂经营者 (详见定义条款) 共同签属本<<领鲜平台服务协议>> (以下简称"本协议") 并使用领鲜平台服务!<br>
+                各服务条款前所列索引关键词仅为帮助您理解该条款表达的主旨之用,不影响或限制本协议条款的含义或解释.为维护您自身权益,建议您仔细阅读各条款具体表述.
+            </div>
+        </div>
+        <div id="agree" class="mui-popup-buttons"><span class="mui-popup-button mui-popup-button-bold">我已阅读并同意该协议</span></div>
+    </div>
+    <div id="backdrop" class="mui-popup-backdrop mui-active" style="display: none;"></div>
     <script src="assets/mui/js/mui.min.js"></script>
     <script type="text/javascript" src="js/index.js" language="javascript"></script>
 </body>
+
 </html>

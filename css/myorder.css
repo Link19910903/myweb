@@ -114,4 +114,19 @@ p {
 }
 .mui-content {
 	background-color: #F6F6F6;
+	height: 30rem;
+}
+.mui-content img {
+	position: absolute;
+	top: 9rem;
+	left: 50%;
+	transform: translate(-50%)
+}
+.none {
+	position: absolute;
+	color: #A4A4A4;
+	font-size: 16px;
+	top: 16rem;
+	left: 50%;
+	transform: translate(-50%)
 }
