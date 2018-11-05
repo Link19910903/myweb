@@ -3,14 +3,15 @@
   height: 100%;
 }
 .mui-card-footer, .mui-card-header {
-  padding:0 15px;
-  background: url('../images/logo.png') no-repeat center center;
+  padding:0 16px;
+  background: url('../images/logo@2x.png') no-repeat center center;
+  background-size: 90px 30px;
 }
 .mui-card {
   margin: 0px;
 }
 .mui-card-content-inner {
-  padding: 15px 10px;
+  padding: 21px 15px;
 }
 .fl {
   float: left;
@@ -19,14 +20,14 @@
   float: right;
 }
 .mt {
-  margin-top: 1rem;
+  margin-top: 0.6rem;
 }
 .order {
   display: flex;
   justify-content: center;
 }
 .order div {
-  padding: 0.6rem 0.8rem;
+  padding: 6px 12px;
 }
 .order p {
   text-align: center;
@@ -42,16 +43,21 @@
   color: #E50012;
 }
 .logout {
-  font-size: 0.9rem;
-  color:#A9A9A9;
+  width: 60px;
+  height: 21px;
+  font-size: 15px;
+  color:#999999;
 }
 .tx {
+  margin-top: 20px;
+  margin-right: 10px;
   text-align: center;
-  color:#FF9464;
-  width: 3.5rem;
-  height: 1.5rem;
-  line-height: 1.5rem;
-  border:1px solid #FF9464;
+  font-size: 15px;
+  color:#FF793E;
+  width: 54px;
+  height: 31px;
+  line-height: 31px;
+  border:1px solid #FF793E;
   border-radius: 0.2rem;
 }
 .bb {
@@ -62,18 +68,15 @@
 }
 .num  {
     width: 10rem;
-    height: 5rem;
-    padding: 1rem 1rem;
+    height: 4rem;
+    padding: 10px 0 0 15px;
 }
 
 .mui-card{
   box-shadow: none;
 }
-.nums {
-  /* height: 10rem; */
-}
 .bank {
-  width: 80%;
+  width: 330px;
   margin: 0 auto;
 }
 .bank p {
@@ -81,7 +84,8 @@
   padding: 0;
 }
 .yhk {
-  width: 100%;
+  width: 330px;
+  margin: 0 auto;
   height: 5rem;
   background-color: #F3E2B4;
   border-radius: 5px 5px 0 0;
@@ -154,11 +158,88 @@
   height: 16rem;
 }
 .gray {
-  color: #949494;
+  color: #666666;
 }
 .yhk {
+  position: absolute;
+  bottom: -120px;
+  height: 90px;
   padding: 0.8rem 0 0 1rem;
 }
 .yhk i img{
+  position: absolute;
+  top: 9px;
+  left: 10px;
   vertical-align: middle;
+}
+.mui-popup.mui-popup-in.xieyi {
+  width: 280px;
+  height: 350px;
+}
+.mui-popup-title.xieyi{
+  height: 40px;
+  line-height: 40px;
+  font-size: 15px;
+  color: #666666;
+}
+.mui-popup-inner.xieyi {
+  padding: 0;
+}
+.mui-popup-title+.mui-popup-text.xieyi {
+  padding: 0 14px;
+}
+.mui-popup-button.mui-popup-button-bold.xieyi{
+  color: #333333;
+}
+.mui-popup-inner:after {
+  height: 0;
+}
+.qudao {
+  font-size: 15px;
+  color: #000;
+}
+.qudao img {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+}
+.mui-card.title {
+  height: 170px;
+}
+.yue {
+  margin-top: 10px;
+}
+p {
+  color: #666;
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+.number {
+  font-size: 18px;
+  color: #FF793E;
+}
+.mui-card.nums {
+  display: flex;
+  flex-wrap: wrap;
+  /* padding: 10px; */
+  height: 162px;
+}
+.mui-card.order{
+  height: 100px;
+}
+p.color {
+  color: #333;
+}
+.mui-card.jsk{
+  position: relative;
+  height: 140px;
+}
+p.banks {
+  color: #825921;
+  padding-left: 27px;
+}
+p.cardnum {
+  font-size: 18px;
+  color: #825921;
+  padding-top: 20px;
 }

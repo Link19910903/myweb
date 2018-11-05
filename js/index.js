@@ -1,3 +1,8 @@
+var isAgree = localStorage.getItem('isAgree');
+if (isAgree === 'agree') {
+	$('#popup').attr('style','display: none')
+    $('#backdrop').attr('style','display: none')
+}
 document.getElementById("confirmBtn").addEventListener('tap', function() {
 	var btnArray = ['取消', '确定'];
 	mui.confirm('', '是否确定退出', btnArray, function(e) {
@@ -29,13 +34,10 @@ document.getElementById("tel").addEventListener('tap', function() {
 	})
 });
 
-//点击同意按钮隐藏协议
+//点击同意按钮隐藏协议 并把状态存储在localstorage中
 document.getElementById("agree").addEventListener('tap',function(){
+	localStorage.setItem('isAgree','agree');
     $('#popup').attr('style','display: none')
     $('#backdrop').attr('style','display: none')
 })
-// $('#agree').on('tap',fuction(){
-// 	$('#popup').attr('style','display: none')
-//     $('#backdrop').attr('style','display: none')
-// })
 

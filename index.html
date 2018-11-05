@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-    <title>饲料渠道</title>
+    <title>领鲜金融</title>
     <link href="assets/mui/css/mui.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="assets/font/iconfont.css">
@@ -16,23 +16,22 @@
 
 <body>
     <div class="content">
-        <div class="mui-card">
+        <div class="mui-card title">
             <div class="mui-card-header">
                 <span></span>
                 <div class="mui-content">
                     <div class="mui-content-padded" style="margin: 5px;text-align: center;">
-                        <button id="confirmBtn" type="button" class="mui-btn mui-btn-blue mui-btn-outlined">退出登录</button>
+                        <div id="confirmBtn" class="logout">退出登陆</div>
                         <div id="info"></div>
                     </div>
                 </div>
             </div>
             <div class="mui-card-content">
                 <div class="mui-card-content-inner">
-                    <i></i>
-                    <p>中粮(北京)饲料科技有限公司黄石分公司</p>
-                    <div class="fl">
+                    <p  class="qudao"><i><img src="images/渠道 icon@2x.png"></i> 中粮(北京)饲料科技有限公司黄石分公司</p>
+                    <div class="fl yue">
                         <p>账户余额(元)</p>
-                        <p>0.00</p>
+                        <p class="number">0.00</p>
                     </div>
                     <div class="fr tx" id="tixian">提现</div>
                 </div>
@@ -41,75 +40,75 @@
         <div class="mui-card mt nums">
             <div class="fl num bb br">
                 <p>待结算金额(元)</p>
-                <p>0.00</p>
+                <p  class="color">0.00</p>
             </div>
             <div class="fl num bb">
                 <p>累计成交金额(元)</p>
-                <p>0.00</p>
+                <p  class="color">0.00</p>
             </div>
             <div class="fl num br">
                 <p>待发货(笔)</p>
-                <p>0</p>
+                <p  class="color">0</p>
             </div>
             <div class="fl num">
                 <p>累计成交订单(元)</p>
-                <p>0</p>
+                <p  class="color">0</p>
             </div>
         </div>
         <div class="mui-card mt order">
             <div>
                 <a href="static/order/myorder.html">
-                    <div class="iconfont icon-dingdan ico"></div>
-                    <p>我的订单</p>
+                    <div class=""><img src="images/我的订单 icon.png"></div>
+                    <p class="color">我的订单</p>
                 </a>
             </div>
             <div>
                 <a href="static/mygoods/goods.html">
-                    <div class="iconfont icon-shangpin ico"></div>
-                    <p>我的商品</p>
+                    <div class=""><img src="images/我的商品 icon.png"></div>
+                    <p class="color">我的商品</p>
                 </a>
             </div>
             <div>
                 <a href="">
-                    <div class="iconfont icon-jiaoyi ico"></div>
-                    <p>交易记录</p>
+                    <div class=""><img src="images/交易记录 icon.png"></div>
+                    <p class="color">交易记录</p>
                 </a>
             </div>
             <div>
                 <a href="static/setting/setting.html">
-                    <div class="iconfont icon-shezhi ico"></div>
-                    <p>设置</p>
+                    <div class=""><img src="images/设置 icon.png"></div>
+                    <p class="color">设置</p>
                 </a>
             </div>
         </div>
-        <div class="mui-card mt">
+        <div class="mui-card mt jsk">
             <div class="mui-card-content bank">
                 <p>我的结算卡</p>
                 <div class="yhk">
-                    <p><i class="icon"><img src="images/结算卡_中行 icon.png"></i>工商银行</p>
+                    <p class="banks"><i class="icon"><img src="images/结算卡_中行 icon.png"></i>工商银行</p>
                     <p class="cardnum">6272 **** **** *** 1263</p>
                 </div>
             </div>
-            <div class="server">
-                <div id="tel" class="txtcenter contack">联系客服</div>
-                <p class="txtcenter">(周一至周五 9:00-19:00)</p>
-            </div>
+        </div>
+        <div class="server">
+            <div id="tel" class="txtcenter contack">联系客服</div>
+            <p class="txtcenter">(周一至周五 9:00-19:00)</p>
         </div>
     </div>
-    <div id="popup" class="mui-popup mui-popup-in" style="display: none;">
-        <div class="mui-popup-inner" id="xieyi">
-            <div class="mui-popup-title bt">领鲜平台服务协议</div>
-            <div class="mui-popup-text gray">
+    <div id="popup" class="mui-popup mui-popup-in xieyi" style="display: block;">
+        <div class="mui-popup-inner xieyi" id="xieyi">
+            <div class="mui-popup-title bt xieyi">领鲜平台服务协议</div>
+            <div class="mui-popup-text xieyi gray">
                 .提示条款 <br>
                 欢迎您与各饲料厂经营者 (详见定义条款) 共同签属本<<领鲜平台服务协议>> (以下简称"本协议") 并使用领鲜平台服务!<br>
                 各服务条款前所列索引关键词仅为帮助您理解该条款表达的主旨之用,不影响或限制本协议条款的含义或解释.为维护您自身权益,建议您仔细阅读各条款具体表述.欢迎您与各饲料厂经营者 (详见定义条款) 共同签属本<<领鲜平台服务协议>> (以下简称"本协议") 并使用领鲜平台服务!<br>
-                各服务条款前所列索引关键词仅为帮助您理解该条款表达的主旨之用,不影响或限制本协议条款的含义或解释.为维护您自身权益,建议您仔细阅读各条款具体表述.欢迎您与各饲料厂经营者 (详见定义条款) 共同签属本<<领鲜平台服务协议>> (以下简称"本协议") 并使用领鲜平台服务!<br>
-                各服务条款前所列索引关键词仅为帮助您理解该条款表达的主旨之用,不影响或限制本协议条款的含义或解释.为维护您自身权益,建议您仔细阅读各条款具体表述.
+                欢迎您与各饲料厂经营者 (详见定义条款) 共同签属本<<领鲜平台服务协议>> (以下简称"本协议") 并使用领鲜平台服务!<br>
+                各服务条款前所列索引关键词仅为帮助您理解该条款表达的主旨之用,不影响或限制本协议条款的含义或解释.为维护您自身权益,建议您仔细阅读各条款具体表述.欢迎您与各饲料厂经营者 (详见定义条款) 共同签属本<<领鲜平台服务协议>> (以下简称"本协议") 并使用领鲜平台服务!
             </div>
         </div>
-        <div id="agree" class="mui-popup-buttons"><span class="mui-popup-button mui-popup-button-bold">我已阅读并同意该协议</span></div>
+        <div id="agree" class="mui-popup-buttons"><span class="mui-popup-button mui-popup-button-bold xieyi">我已阅读并同意该协议</span></div>
     </div>
-    <div id="backdrop" class="mui-popup-backdrop mui-active" style="display: none;"></div>
+    <div id="backdrop" class="mui-popup-backdrop mui-active" style="display: block;"></div>
     <script src="assets/mui/js/mui.min.js"></script>
     <script type="text/javascript" src="js/index.js" language="javascript"></script>
 </body>
