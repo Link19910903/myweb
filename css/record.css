@@ -1,0 +1,41 @@
+.nap {
+	height: 70px;
+	padding-top: 10px;
+	border-bottom: 1px solid #EEEEEE;
+}
+.nap span {
+	width: 50%;
+	margin-top: 3px;
+}
+.nap p {
+	font-size: 15px;
+}
+.time {
+	padding-left: 15px;
+	color: #999999;
+	font-size: 15px;
+	height: 42px;
+	line-height: 42px;
+}
+.item.record {
+	margin-top: 0px;
+}
+p.time {
+	margin-bottom: 0px;
+}
+.lq {
+	text-align: left;
+}
+.rq {
+	text-align: right;
+}
+.green {
+	color: #3BC67F;
+	font-size: 15px;
+}
+.gray {
+	color: #999999;
+}
+.orange {
+	color: #FF793E;
+}
