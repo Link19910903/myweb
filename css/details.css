@@ -7,12 +7,13 @@
 	padding-right: 2rem;
 }
 .mui-bar-nav~.mui-content {
-	padding-left: 10px;
+	position: relative;
+	padding-left: 46px;
 	color: #fff;
 	padding-top: 0px;
 	background-color: #FF8A2D;
-	height: 4rem;
-	line-height: 4rem;
+	height: 60px;
+	line-height: 60px;
 }
 .item {
 	position: relative;
@@ -22,7 +23,7 @@
 	width: 6rem;
 }
 .chanpin {
-	width: 65%;
+	width: 60%;
 	position: absolute;
 	top: 1rem;
 	left: 8rem;
@@ -35,4 +36,20 @@
 	position: absolute;
 	top: 4rem;
 	left: 12rem;
+}
+.state {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+}
+.solid {
+	width: 1px;
+	height: 20px;
+	background-color: #EEEEEE;
+}
+.bianhao {
+	padding: 15px 0 20px 15px;
+}
+.gray {
+	color: #999999
 }

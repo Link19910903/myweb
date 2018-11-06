@@ -5,7 +5,7 @@
 	    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
 	    <meta name="apple-mobile-web-app-capable" content="yes"/>
 	    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
-	    <title>我的订单</title>
+	    <title>交易记录</title>
 	    <link href="../../assets/mui/css/mui.min.css" rel="stylesheet"/>
 	    <link rel="stylesheet" href="../../css/base.css">
 	    <link rel="stylesheet" href="../../css/myorder.css">
@@ -30,17 +30,228 @@
 		<div class="mui-content">
 			<div class="isOrder" style="display:block">
 				<img src="../../images/无数据.png">
-				<p class="none">您暂无交易记录~</p>
+				<p class="none">您当前没有交易记录</p>
 			</div>
-			<div class="record">
-				<div class="mui-content">
-					123
+			<div style="padding: 0 0 0rem 0;">
+				<div id="segmentedControl" class="mui-segmented-control mui-segmented-control-inverted mui-segmented-control-primary">
+					<a class="mui-control-item mui-active" href="#item1">
+						提现记录
+					</a>
+					<a class="mui-control-item" href="#item2">
+						收入记录
+					</a>
+				</div>
+			</div>
+			<div>
+				<div id="item1" class="mui-control-content mui-active">
+					<div class="item">
+						<div class="state bt">
+							<div class="gongsi">
+								<span class="fl href">张三生猪养殖有限公司</span>
+								<span class="fr href right orange">待发货</span>
+							</div>
+							<div class="time">
+								<span class="fl href gray">10-22 17:44</span>
+								<span class="fr href right gray">E1744540342000002</span>
+							</div>
+						</div>
+						<div class="box bt">
+							<div class="num">
+								<div class="goods fl">
+									百宜 百益云猪饲料 8043中猪饲料预混料 4% 猪预混料40kg/包
+								</div>
+								<div class="piece fr">
+									<div class="right">￥120.0</div>
+									<div class="right gray">× 400</div>
+								</div>
+							</div>
+							<div class="num">
+								<div class="goods fl">
+									百宜 百益云猪饲料 8043中猪饲料预混料 4% 猪预混料40kg/包
+								</div>
+								<div class="piece fr">
+									<div class="right">￥120.0</div>
+									<div class="right gray">× 400</div>
+								</div>
+							</div>
+						</div>
+						<div class="total">
+							<div>共<i class="orange">800</i>包<i class="orange">16</i>吨,合计:<i class="orange">￥</i><span class="orange font">554,400</span><i class="orange">.00</i></div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="state bt">
+							<div class="gongsi">
+								<span class="fl href">张三生猪养殖有限公司</span>
+								<span class="fr href right orange">已发货</span>
+							</div>
+							<div class="time">
+								<span class="fl href gray">10-22 17:44</span>
+								<span class="fr href right gray">E1744540342000002</span>
+							</div>
+						</div>
+						<div class="box bt">
+							<div class="num">
+								<div class="goods fl">
+									百宜 百益云猪饲料 8043中猪饲料预混料 4% 猪预混料40kg/包
+								</div>
+								<div class="piece fr">
+									<div class="right">￥120.0</div>
+									<div class="right gray">× 400</div>
+								</div>
+							</div>
+						</div>
+						<div class="total">
+							<div>共<i class="orange">800</i>包<i class="orange">16</i>吨,合计:<i class="orange">￥</i><span class="orange font">554,400</span><i class="orange">.00</i></div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="state bt">
+							<div class="gongsi">
+								<span class="fl href">张三生猪养殖有限公司</span>
+								<span class="fr href right orange">订单完成</span>
+							</div>
+							<div class="time">
+								<span class="fl href gray">10-22 17:44</span>
+								<span class="fr href right gray">E1744540342000002</span>
+							</div>
+						</div>
+						<div class="box bt">
+							<div class="num">
+								<div class="goods fl">
+									百宜 百益云猪饲料 8043中猪饲料预混料 4% 猪预混料40kg/包
+								</div>
+								<div class="piece fr">
+									<div class="right">￥120.0</div>
+									<div class="right gray">× 400</div>
+								</div>
+							</div>
+							<div class="num">
+								<div class="goods fl">
+									百宜 百益云猪饲料 8043中猪饲料预混料 4% 猪预混料40kg/包
+								</div>
+								<div class="piece fr">
+									<div class="right">￥120.0</div>
+									<div class="right gray">× 400</div>
+								</div>
+							</div>
+						</div>
+						<div class="total">
+							<div>共<i class="orange">800</i>包<i class="orange">16</i>吨,合计:<i class="orange">￥</i><span class="orange font">554,400</span><i class="orange">.00</i></div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="state bt">
+							<div class="gongsi">
+								<span class="fl href">张三生猪养殖有限公司</span>
+								<span class="fr href right orange">订单关闭</span>
+							</div>
+							<div class="time">
+								<span class="fl href gray">10-22 17:44</span>
+								<span class="fr href right gray">E1744540342000002</span>
+							</div>
+						</div>
+						<div class="box bt">
+							<div class="num">
+								<div class="goods fl">
+									百宜 百益云猪饲料 8043中猪饲料预混料 4% 猪预混料40kg/包
+								</div>
+								<div class="piece fr">
+									<div class="right">￥120.0</div>
+									<div class="right gray">× 400</div>
+								</div>
+							</div>
+							<div class="num">
+								<div class="goods fl">
+									百宜 百益云猪饲料 8043中猪饲料预混料 4% 猪预混料40kg/包
+								</div>
+								<div class="piece fr">
+									<div class="right">￥120.0</div>
+									<div class="right gray">× 400</div>
+								</div>
+							</div>
+						</div>
+						<div class="total">
+							<div>共<i class="orange">800</i>包<i class="orange">16</i>吨,合计:<i class="orange">￥</i><span class="orange font">554,400</span><i class="orange">.00</i></div>
+						</div>
+					</div>
+				</div>
+				<div id="item2" class="mui-control-content">
+					<div class="item">
+						<div class="state bt">
+							<div class="gongsi">
+								<span class="fl href">张三生猪养殖有限公司</span>
+								<span class="fr href right orange">待发货</span>
+							</div>
+							<div class="time">
+								<span class="fl href gray">10-22 17:44</span>
+								<span class="fr href right gray">E1744540342000002</span>
+							</div>
+						</div>
+						<div class="box bt">
+							<div class="num">
+								<div class="goods fl">
+									百宜 百益云猪饲料 8043中猪饲料预混料 4% 猪预混料40kg/包
+								</div>
+								<div class="piece fr">
+									<div class="right">￥120.0</div>
+									<div class="right gray">× 400</div>
+								</div>
+							</div>
+							<div class="num">
+								<div class="goods fl">
+									百宜 百益云猪饲料 8043中猪饲料预混料 4% 猪预混料40kg/包
+								</div>
+								<div class="piece fr">
+									<div class="right">￥120.0</div>
+									<div class="right gray">× 400</div>
+								</div>
+							</div>
+						</div>
+						<div class="total">
+							<div>共<i class="orange">800</i>包<i class="orange">16</i>吨,合计:<i class="orange">￥</i><span class="orange font">554,400</span><i class="orange">.00</i></div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="state bt">
+							<div class="gongsi">
+								<span class="fl href">张三生猪养殖有限公司</span>
+								<span class="fr href right orange">待发货</span>
+							</div>
+							<div class="time">
+								<span class="fl href gray">10-22 17:44</span>
+								<span class="fr href right gray">E1744540342000002</span>
+							</div>
+						</div>
+						<div class="box bt">
+							<div class="num">
+								<div class="goods fl">
+									百宜 百益云猪饲料 8043中猪饲料预混料 4% 猪预混料40kg/包
+								</div>
+								<div class="piece fr">
+									<div class="right">￥120.0</div>
+									<div class="right gray">× 400</div>
+								</div>
+							</div>
+							<div class="num">
+								<div class="goods fl">
+									百宜 百益云猪饲料 8043中猪饲料预混料 4% 猪预混料40kg/包
+								</div>
+								<div class="piece fr">
+									<div class="right">￥120.0</div>
+									<div class="right gray">× 400</div>
+								</div>
+							</div>
+						</div>
+						<div class="total">
+							<div>共<i class="orange">800</i>包<i class="orange">16</i>吨,合计:<i class="orange">￥</i><span class="orange font">554,400</span><i class="orange">.00</i></div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 		<script src="../../assets/mui/js/mui.min.js"></script>
 		<script src="../../assets/zepto/zepto.min.js" ></script>
-	    <script src="../../js/myorder.js"></script>
 	    <script type="text/javascript" >
 			mui('body').on( 'tap' , 'a' , function(){
 				document.location.href=this.href;
