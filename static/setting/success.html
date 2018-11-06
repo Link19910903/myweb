@@ -9,8 +9,8 @@
 	    <link rel="stylesheet" href="assets/font/iconfont.css">
 	    <link href="../../assets/mui/css/mui.min.css" rel="stylesheet"/>
 	    <link rel="stylesheet" href="../../css/changelogin.css">
-	    <link rel="stylesheet" href="../../css/setsuccess.css">
 	    <link rel="stylesheet" href="../../css/base.css">
+	    <link rel="stylesheet" href="../../css/setsuccess.css">
     </head>
     <body>
     	<header id="header" class="mui-bar mui-bar-nav">
@@ -23,19 +23,25 @@
 		<div class="mui-content">
 	        <div class="success">
 	    		<div>
-	    			<img src="../../images/success@2x.png" style="width: 70px;height: 70px">
-	    			<div class="success">提现</div>
+	    			<img src="../../images/success@2x.png" style="width: 70px; height: 70px;">
+	    			<div class="success">提现成功</div>
 	    		</div>
-	        	<p>您已成功提现 ￥1000.50, 将于T+1日到账</p>
+	        	<p>您已成功提现￥1000.5,将于T+1日到账</p>
 	        </div>
 
 	        <div class="mui-content-padded">
 	            <button id="check-btn" class="mui-btn mui-btn-block mui-btn-danger border-radius">
-	            	去提现
+	            	完成
 	            </button>
 	        </div>
 	    </div>
 	    <script type="text/javascript" src="../../assets/zepto/zepto.min.js"></script>
-	    <script type="text/javascript" src="../../js/setsuccess.js"></script>
+	    <script type="text/javascript">
+	    	$(function(){
+				$('#check-btn').on('click',function(){
+					window.location.href='../../index.html'
+				})
+			})
+	    </script>
     </body>
 </html>

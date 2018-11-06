@@ -66,9 +66,9 @@
   border-right :1px solid #F4F4F4;
 }
 .num  {
-    width: 10rem;
+    width: 180px;
     height: 4rem;
-    padding: 10px 0 0 15px;
+    padding: 10px 0 0 10px;
 }
 
 .mui-card{
@@ -94,12 +94,12 @@
 }
 .server p {
   margin: 0;
-  padding: 0;
+  padding: 5px;
 }
 .server {
   background-color: #FAFAFA;
   /* border-top: 1px solid #ccc; */
-  padding: 3rem 0 2rem;
+  padding: 29px 0 26px;
 }
 .txtcenter {
   text-align: center;
@@ -107,9 +107,9 @@
 .contack {
   margin: 0 auto;
   color:#FF9464;
-  width: 5.5rem;
-  height: 1.8rem;
-  line-height: 1.8rem;
+  width: 90px;
+  height: 30px;
+  line-height: 30px;
   border:1px solid #FF9464;
   border-radius: 1.2rem;
 }
@@ -218,9 +218,7 @@ p {
   color: #FF793E;
 }
 .mui-card.nums {
-  display: flex;
-  flex-wrap: wrap;
-  /* padding: 10px; */
+  padding: 18px;
   height: 162px;
 }
 .mui-card.order{
@@ -241,4 +239,24 @@ p.cardnum {
   font-size: 18px;
   color: #825921;
   padding-top: 20px;
+}
+p.mycard {
+  color: #333333;
+  position: absolute;
+  top: 18px;
+  left: 6px;
+}
+.yhk {
+  position: absolute;
+  bottom: -140px;
+}
+p.txtcenter {
+  color: #999999;
+}
+.numbox {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  overflow: hidden;
+  width: 360px;
 }
