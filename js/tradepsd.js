@@ -15,7 +15,7 @@ function pwdValidator(){
     msg.attr("class","error");
     msg.attr("class","iconfont icon-warn");
     return false;
-  }else if(value.length !=8){
+  }else if(value.length !=6){
     msg.text("密码的长度不正确");
     msg.attr("class","error");
     msg.attr("class","iconfont icon-warn");
@@ -42,7 +42,7 @@ function pwdRepeatValidator(){
     msg.attr("class","error");
     msg.attr("class","iconfont icon-warn");
     return false;
-  }else if(value.length !=8 ){
+  }else if(value.length !=6 ){
     msg.text("密码的长度不正确");
     msg.attr("class","error");
     msg.attr("class","iconfont icon-warn");

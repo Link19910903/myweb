@@ -48,8 +48,14 @@ function isclick(){
     document.getElementById("check-btn").disabled = "";
   }
 }
-$("#code").on("input propertychange",function(){
-  var num = $('#code').val();
-  console.log(num)
-
+// $("#code").on("input propertychange",function(){
+//   var num = $('#code').val()*1;
+//   if (num.length < 6) {
+//     msg.text("");
+//     msg.attr("class","hide");
+//   }
+// })
+//点击提交按钮跳转到重置密码页
+$('#check-btn').on('click',function(){
+  window.location.href = 'tradepsd.html'
 })
