@@ -7,7 +7,7 @@
     width: 75%;
     height: 50px;
     line-height: 24px;
-    font-size: 46px;
+    font-size: 27px;
     color: #000000;
     /* padding: 5px 8px; */
     border: 0px;
@@ -62,6 +62,7 @@
 	padding: 0;
     width: 40px;
     height: 40px;
+    line-height: 40px;
     border: none;
     border-right: 1px solid #e5e5e5;
     text-align: center;
@@ -101,4 +102,26 @@
 }
 .mui-popup-title+.mui-popup-text.tixian {
     margin: 10px 0 0 ;
+}
+.all{
+    color: #7FB3FD;
+}
+#getall {
+    position: absolute;
+    top: 193px;
+    left: 224px;
+    color: #7FB3FD;
+}
+.mui-popup-title {
+    color: #727272;
+}
+.mui-popup-button {
+    color: #AFAFAF;
+    font-size: 1rem;
+}
+.mui-popup-button.mui-popup-button-bold {
+    font-weight: 400;
+}
+.mui-bar-nav~.mui-content.tixian {
+    padding-top: 0;
 }

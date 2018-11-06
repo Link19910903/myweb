@@ -13,34 +13,28 @@ window.onload = function() {
             oGetOut.style.opacity = 0.4;
             document.getElementById("getout").disabled='none';
 
-            oKyye.innerHTML = "可提现金额：￥1000000.00，<a href='javascript:;' id='getall'>全部提现</a>"
+            oKyye.innerHTML = "可提现金额：￥1000000.00，"
         } else if (parseFloat(oGetMoneys.value) > okyMOneys) {
             oGetOut.style.opacity = 0.4;
             document.getElementById("getout").disabled='none';
-            oKyye.innerHTML = "<font color=red>输入金额超过可提现金额</font>"
+            oKyye.innerHTML = "<font color=red>输入金额超过可提现金额</font>";
+            $('#getall').attr('style','display: none')
         } else {
             var paroGetMoneys = parseFloat(oGetMoneys.value);
             var sxf = paroGetMoneys;
             var sjdz = paroGetMoneys;
-            oKyye.innerHTML = "可提现金额：￥1000000.00，<a href='javascript:;' id='getall'>全部提现</a>";
+            oKyye.innerHTML = "可提现金额：￥1000000.00，";
+            $('#getall').attr('style','display: inline-block')
             // oKyye.innerHTML = "可提现金额：￥1000000.00,<a href="javascript:;" id="getall">全部提现</a>";
             oGetOut.style.opacity = 1;
             document.getElementById("getout").disabled='';
             //这里就可以进行与后台交互的操作比如ajax操作等。
         }
     };
-//全部提现
-$('#getall').on('click',function(){
-        oGetMoneys.value = okyMOneys;
-});
-    // oGetAll.onclick = function() {
-    //     // var parGetMoneys = parseFloat(oGetMoneys.value); //格式化成数字
-    //     // var sjdz = okyMOneys - (okyMOneys * 0.001); //手费0.1%
-    //     // var sxf = okyMOneys * 0.001;
-    //     oGetMoneys.value = okyMOneys;
-    //     // oKyye.innerHTML = "额外扣除￥" + sxf.toFixed(2) + "手续费（费率0.1%）";
-    //     //alert("a");
-    // };
+    //全部提现
+    $('#getall').on('click',function(){
+            oGetMoneys.value = okyMOneys;
+    });
 
 };
 
@@ -70,9 +64,21 @@ document.getElementById("getout").addEventListener('click',function(){
          //执行其他操作
      }
  });
+
+
+ var password = 123456;  //模拟用户存储的交易密码
  //输入六位密码后执行下面的函数 判断密码是否正确
  function checkpsd(){
-    window.location.href = '../setting/success.html';
+    var psd = $('#pwd-input').val();
+    console.log(psd)
+    //如果密码验证成功跳转到提现成功页面
+    if (psd == password) {
+        window.location.href = '../setting/success.html';
+    }else {
+        $('#popup').attr('style','display: none')
+        $('#backdrop').attr('style','display: none')
+        $('.forget').click();
+    }
  }
  //点击关闭按钮取消密码输入
  document.getElementById("guanbi").addEventListener('click',function(){
@@ -86,3 +92,20 @@ function getNum(){
     var num = $('#getmoneys').val()
     $('#jine').text('￥'+num)
 }
+
+//密码输入错误弹出提示框
+//mui初始化
+mui.init({
+    swipeBack: true //启用右滑关闭功能
+});
+// var info = document.getElementById("info");
+document.getElementById("confirmBtn").addEventListener('click', function() {
+    var btnArray = ['重新输入', '忘记密码'];
+    mui.confirm('', '交易密码不正确', btnArray, function(e) {
+        if (e.index == 0) {
+
+        } else {
+
+        }
+    })
+});

@@ -23,7 +23,8 @@
 				提现
 			</a>
     </header>
-    <div class="mui-content">
+    <div class="mui-content tixian">
+        <button id="confirmBtn" class="forget" style="display:none"></button>
         <div class="tixian-box">
             <div class="tobank">
                 <span class="dzyh">结算卡</span>
@@ -37,11 +38,11 @@
                     <input type="tel" id="getmoneys" class="t-input fr" onkeyup="getNum()" autofocus="autofocus">
                 </div>
                 <span class="kyye">
-                	可提现金额：￥1000000.00，
-                	<a href="javascript:;" id="getall">
-	                	全部提现
-	                </a>
-	            </span>
+                	可提现金额：<span>￥1000000.00，</span>
+                </span>
+            	<span href="javascript:;" id="getall" style="display: inline-block;">
+                	全部提现
+                </span>
 
                 <button id="getout" type="button" disabled="disabled">下一步</button>
             </div>
