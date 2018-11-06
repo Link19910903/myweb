@@ -53,3 +53,18 @@
 .gray {
 	color: #999999
 }
+.zhongjia {
+	position: relative;
+}
+.lfbox {
+	position: absolute;
+	left: 20px;
+}
+.rtbox {
+	position: absolute;
+	right: 25px;
+	color: #FF793E;
+}
+span.num {
+	font-size: 18px
+}

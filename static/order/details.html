@@ -31,17 +31,17 @@
 							<div class="">收货人:张二娃</div>
 						</div>
 						<div>
-							<div class="">13784069928</div>
-							<div class="">13784069928</div>
+							<div class="buyernum">13784069928</div>
+							<div class="connum">13784069888</div>
 						</div>
 					</div>
 					<p>收货地址:北京北京市朝阳区双井街道高碑店镇建国路29号四惠大厦东配楼6029E-6032E</p>
 				</div>
 			</div>
 			<div class="mui-card-footer lianxi">
-				<a class="lianxi">联系买家</a>
+				<a class="lianxi" id="telBuyer">联系买家</a>
 				<span class="solid"></span>
-				<a class="lianxi">联系收货人</a>
+				<a class="lianxi" id="telCon">联系收货人</a>
 			</div>
 		</div>
 		<div class="mui-card mt">
@@ -67,9 +67,9 @@
 					</div>
 				</div>
 			</div>
-			<div class="mui-card-footer">
-				<div>订单总价</div>
-				<div>￥554,400.<span>00</span></div>
+			<div class="mui-card-footer" class="zhongjia">
+				<div class="lfbox">订单总价</div>
+				<div class="rtbox">￥<span class="num">554,400</span>.00</div>
 			</div>
 		</div>
 		<div class="mui-card mt">
@@ -79,6 +79,9 @@
 				<div>付款时间：　<span class="gray">2018-09-20 21:43:19</span></div>
 			</div>
 		</div>
+		<script type="text/javascript" src="../../assets/mui/js/mui.min.js"></script>
+		<script src="../../assets/zepto/zepto.min.js" ></script>
+		<script type="text/javascript" src="../../js/detail.js"></script>
 		<script type="text/javascript" >
 			mui('body').on( 'tap' , 'a' , function(){
 				document.location.href=this.href;
