@@ -39,21 +39,21 @@ document.getElementById("agree").addEventListener('tap',function(){
 	localStorage.setItem('isAgree','agree');
     $('#popup').attr('style','display: none')
     $('#backdrop').attr('style','display: none')
-    move();
+    // move();
 })
 
 //实现滚动条无法滚动
-var mo=function(e){e.preventDefault();};
-console.log(mo)
+// var mo=function(e){e.preventDefault();};
+// console.log(mo)
 
 /***禁止滑动***/
-function stop(){
-        document.body.style.overflow='hidden';
-        document.addEventListener("touchmove",mo,false);//禁止页面滑动
-}
-stop();
+// function stop(){
+//         document.body.style.overflow='hidden';
+//         document.addEventListener("touchmove",mo,false);//禁止页面滑动
+// }
+// stop();
 /***取消滑动限制***/
-function move(){
-        document.body.style.overflow='';//出现滚动条
-        document.removeEventListener("touchmove",mo,false);
-}
+// function move(){
+//         document.body.style.overflow='';//出现滚动条
+//         document.removeEventListener("touchmove",mo,false);
+// }
