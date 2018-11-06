@@ -70,13 +70,14 @@ document.getElementById("getout").addEventListener('click',function(){
  //输入六位密码后执行下面的函数 判断密码是否正确
  function checkpsd(){
     var psd = $('#pwd-input').val();
-    console.log(psd)
+    // console.log(psd)
     //如果密码验证成功跳转到提现成功页面
     if (psd == password) {
         window.location.href = '../setting/success.html';
     }else {
-        $('#popup').attr('style','display: none')
-        $('#backdrop').attr('style','display: none')
+        // $('#popup').attr('style','display: none')
+        // $('#backdrop').attr('style','display: none')
+        $('#guanbi').click();
         $('.forget').click();
     }
  }
@@ -103,8 +104,13 @@ document.getElementById("confirmBtn").addEventListener('click', function() {
     var btnArray = ['重新输入', '忘记密码'];
     mui.confirm('', '交易密码不正确', btnArray, function(e) {
         if (e.index == 0) {
-
+            //点击重新输入执行的函数
+            $('#popup').attr('style','display: block')
+            $('#backdrop').attr('style','display: block')
+            $('#pwd-input')[0].focus()
         } else {
+            //点击点击忘记密码执行的函数 跳转到手机验证登陆页面
+            window.location.href = '../login/identity.html';
 
         }
     })

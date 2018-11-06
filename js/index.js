@@ -6,10 +6,10 @@ if (isAgree === 'agree') {
 document.getElementById("confirmBtn").addEventListener('tap', function() {
 	var btnArray = ['取消', '确定'];
 	mui.confirm('', '是否确定退出', btnArray, function(e) {
-		if (e.index == 0) {
-			info.innerText = '';
+		if (e.index == 1) {
+
 		} else {
-			info.innerText = ''
+
 		}
 	})
 });

@@ -5,7 +5,7 @@
 	    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
 	    <meta name="apple-mobile-web-app-capable" content="yes"/>
 	    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
-	    <title>设置交易密码</title>
+	    <title>核验身份</title>
 	    <link rel="stylesheet" href="../../assets/font/iconfont.css">
 	    <link href="../../assets/mui/css/mui.min.css" rel="stylesheet"/>
 	    <link rel="stylesheet" href="../../css/changelogin.css">
@@ -16,9 +16,9 @@
     <body>
     	<header id="header" class="mui-bar mui-bar-nav">
 			<h1 class="mui-title"></h1>
-		<a class="mui-action-back mui-btn mui-btn-blue mui-btn-link mui-btn-nav mui-pull-left" href="../../index.html">
+		<a class="mui-action-back">
 				<span class="mui-icon mui-icon-left-nav"></span>
-				设置交易密码
+				核验身份
 			</a>
 		</header>
         <div class="mui-content">
@@ -30,8 +30,8 @@
 
                 <div class="mui-input-row">
                     <label>验证码</label>
-                    <input id="code" type="text" class="mui-input" placeholder="请输入验证码"/ name="vcode" maxlength="6" onblur="codeValidator()" onkeyup="if(this.value.length==6){isclick()}">
-                    <div class="hqyzm" id="getcode">
+                    <input id="code" type="text" class="mui-input" placeholder="请输入验证码"/ name="vcode" maxlength="6" onblur="codeValidator()" onkeyup="if(this.value.length==6){isclick()}" style="padding-left: 0px;">
+                    <div class="hqyzm" id="getcode" style="top:6px;">
                         <input type="button" id="btn" value="获取验证码" onclick="settime(this)" />
                     </div>
                 </div>
