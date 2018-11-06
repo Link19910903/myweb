@@ -23,3 +23,6 @@
 .mui-table-view-cell>a:not(.mui-btn) {
 	white-space: pre-wrap;
 }
+.mz {
+	margin-top: 0px;
+}

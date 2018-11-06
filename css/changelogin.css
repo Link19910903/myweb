@@ -1,6 +1,6 @@
 body{
-	font-size: 1rem;
-	color:#6E6E6E;
+	font-size: 15px;
+	color:#666666;
 }
 
 .mui-bar-nav~.mui-content{
@@ -22,11 +22,15 @@ body{
 	margin-top:2.5rem;
 }
 .mui-input-row label {
-	padding:11px 0px 11px 9px;
+	padding:18px 0px 11px 13px;
 }
 .psd {
 	padding: 0;
 }
 input, select, textarea{
 	font-size: 0.9rem;
+}
+.mui-input-row label~input, .mui-input-row label~select, .mui-input-row label~textarea {
+	padding-left: 8px;
+	padding-top: 20px;
 }

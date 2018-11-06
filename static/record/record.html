@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+	    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+	    <meta name="apple-mobile-web-app-capable" content="yes"/>
+	    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+	    <title>我的订单</title>
+	    <link href="../../assets/mui/css/mui.min.css" rel="stylesheet"/>
+	    <link rel="stylesheet" href="../../css/base.css">
+	    <link rel="stylesheet" href="../../css/myorder.css">
+	    <style>
+			.mui-control-content {
+				background-color: white;
+				min-height: 215px;
+			}
+			.mui-control-content .mui-loading {
+				margin-top: 50px;
+			}
+		</style>
+    </head>
+    <body>
+    	<header id="header" class="mui-bar mui-bar-nav">
+			<h1 class="mui-title"></h1>
+		<a class="mui-action-back" href="../../index.html">
+			<span class="mui-icon mui-icon-left-nav"></span>
+				交易记录
+		</a>
+		</header>
+		<div class="mui-content">
+			<div class="isOrder" style="display:block">
+				<img src="../../images/无数据.png">
+				<p class="none">您暂无交易记录~</p>
+			</div>
+		</div>
+		<script src="../../assets/mui/js/mui.min.js"></script>
+		<script src="../../assets/zepto/zepto.min.js" ></script>
+	    <script src="../../js/myorder.js"></script>
+	    <script type="text/javascript" >
+			mui('body').on( 'tap' , 'a' , function(){
+				document.location.href=this.href;
+			} )
+		</script>
+    </body>
+</html>

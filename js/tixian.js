@@ -7,43 +7,45 @@ window.onload = function() {
     var oKyye = document.getElementsByClassName("kyye")[0];
 
 
-
     oGetMoneys.oninput = function() //监听用户的输入给出相应提示。
     {
         if (oGetMoneys.value == "") {
             oGetOut.style.opacity = 0.4;
-            oKyye.innerHTML = "当前零钱余额：25546.60元，<a href='javascript:;'' id='getall'>全部提现</a>"
+            document.getElementById("getout").disabled='none';
+
+            oKyye.innerHTML = "可提现金额：￥1000000.00，<a href='javascript:;' id='getall'>全部提现</a>"
         } else if (parseFloat(oGetMoneys.value) > okyMOneys) {
             oGetOut.style.opacity = 0.4;
+            document.getElementById("getout").disabled='none';
             oKyye.innerHTML = "<font color=red>输入金额超过可提现金额</font>"
         } else {
             var paroGetMoneys = parseFloat(oGetMoneys.value);
-            var sxf = paroGetMoneys * 0.001;
-            var sjdz = paroGetMoneys - sxf;
-            oKyye.innerHTML = "额外扣除￥" + sxf.toFixed(2) + "手续费（费率0.1%）";
+            var sxf = paroGetMoneys;
+            var sjdz = paroGetMoneys;
+            oKyye.innerHTML = "可提现金额：￥1000000.00，<a href='javascript:;' id='getall'>全部提现</a>";
             // oKyye.innerHTML = "可提现金额：￥1000000.00,<a href="javascript:;" id="getall">全部提现</a>";
             oGetOut.style.opacity = 1;
             document.getElementById("getout").disabled='';
             //这里就可以进行与后台交互的操作比如ajax操作等。
         }
     };
-
-
-
-    //全部提现
-    oGetAll.onclick = function() {
-        // var parGetMoneys = parseFloat(oGetMoneys.value); //格式化成数字
-        // var sjdz = okyMOneys - (okyMOneys * 0.001); //手费0.1%
-        // var sxf = okyMOneys * 0.001;
+//全部提现
+$('#getall').on('click',function(){
         oGetMoneys.value = okyMOneys;
-        // oKyye.innerHTML = "额外扣除￥" + sxf.toFixed(2) + "手续费（费率0.1%）";
-        //alert("a");
-    };
+});
+    // oGetAll.onclick = function() {
+    //     // var parGetMoneys = parseFloat(oGetMoneys.value); //格式化成数字
+    //     // var sjdz = okyMOneys - (okyMOneys * 0.001); //手费0.1%
+    //     // var sxf = okyMOneys * 0.001;
+    //     oGetMoneys.value = okyMOneys;
+    //     // oKyye.innerHTML = "额外扣除￥" + sxf.toFixed(2) + "手续费（费率0.1%）";
+    //     //alert("a");
+    // };
 
 };
 
 //点击下一步按钮弹出密码输入框
-document.getElementById("getout").addEventListener('tap',function(){
+document.getElementById("getout").addEventListener('click',function(){
     $('#popup').attr('style','display: block')
     $('#backdrop').attr('style','display: block')
     document.getElementById("pwd-input").focus(function(event) {
@@ -68,12 +70,12 @@ document.getElementById("getout").addEventListener('tap',function(){
          //执行其他操作
      }
  });
- //输入六位密码后执行下面的函数
+ //输入六位密码后执行下面的函数 判断密码是否正确
  function checkpsd(){
     window.location.href = '../setting/success.html';
  }
  //点击关闭按钮取消密码输入
- document.getElementById("guanbi").addEventListener('tap',function(){
+ document.getElementById("guanbi").addEventListener('click',function(){
     $('#popup').attr('style','display: none')
     $('#backdrop').attr('style','display: none')
     document.getElementById("pwd-input").value = '';

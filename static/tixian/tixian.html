@@ -15,10 +15,10 @@
     <link rel="stylesheet" type="text/css" href="../../css/reset.css">
     <link rel="stylesheet" type="text/css" href="../../css/weichat.css">
 </head>
-<body onload="init()">
+<body>
     <header id="header" class="mui-bar mui-bar-nav">
         <h1 class="mui-title"></h1>
-        <a class="mui-action-back mui-btn mui-btn-blue mui-btn-link mui-btn-nav mui-pull-left" href="../../index.html">
+        <a class="mui-action-back" href="../../index.html">
 				<span class="mui-icon mui-icon-left-nav"></span>
 				提现
 			</a>
@@ -31,30 +31,33 @@
                 <span class="dz">T+1日到帐</span>
             </div>
             <div class="t-moneys mui-content">
-                <span class="txje">提现金额</span>
-                <span class="rmb fl bank">￥</span>
+                <div class="tixianbox">
+                    <span class="txje">提现金额</span>
+                    <span class="rmb fl bank">￥</span>
+                    <input type="tel" id="getmoneys" class="t-input fr" onkeyup="getNum()" autofocus="autofocus">
+                </div>
                 <span class="kyye">
                 	可提现金额：￥1000000.00，
                 	<a href="javascript:;" id="getall">
 	                	全部提现
 	                </a>
 	            </span>
-                <input type="tel" id="getmoneys" class="t-input fr" onkeyup="getNum()" autofocus="autofocus">
+
                 <button id="getout" type="button" disabled="disabled">下一步</button>
             </div>
         </div>
     </div>
     <!-- 弹出密码输入框 -->
-    <div id="popup" class="mui-popup mui-popup-in" style="display: none;">
-        <div class="mui-popup-inner psdinput">
+    <div id="popup" class="mui-popup mui-popup-in tixian" style="display: none;">
+        <div class="mui-popup-inner psdinput tixian">
             <i class="guanbi"><img id="guanbi" src="../../images/弹窗关闭.png"></i>
-            <div class="mui-popup-title bt">请输入交易密码</div>
-            <div class="mui-popup-text">
+            <div class="mui-popup-title bt tixian">请输入交易密码</div>
+            <div class="mui-popup-text tixian">
                 提现金额
-                <div class="jine" id="jine">
+                <div class="jine tixian" id="jine">
                 </div>
             </div>
-            <div class="pwd-box">
+            <div class="pwd-box tixian">
                 <input type="tel" maxlength="6" class="pwd-input" id="pwd-input" onkeyup="if(this.value.length==6){checkpsd()}">
                 <div class="fake-box">
                     <input type="password" readonly="">

@@ -7,6 +7,7 @@
 	padding-right: 2rem;
 }
 .mui-bar-nav~.mui-content {
+	padding-left: 10px;
 	color: #fff;
 	padding-top: 0px;
 	background-color: #FF8A2D;

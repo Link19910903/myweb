@@ -19,18 +19,18 @@
     <body>
     	<header id="header" class="mui-bar mui-bar-nav">
 			<h1 class="mui-title"></h1>
-		<a class="mui-action-back mui-btn mui-btn-blue mui-btn-link mui-btn-nav mui-pull-left" href="../../index.html">
+		<a class="mui-action-back" href="../../index.html">
 				<span class="mui-icon mui-icon-left-nav"></span>
 				修改交易密码
 			</a>
 		</header>
 		<div class="mui-content">
         <form class="mui-input-group">
-            <div class="mui-input-row">
+            <div class="mui-input-row bt">
                 <label>当前交易密码</label>
                 <input id="oldPassword" type="password" class="mui-input-clear mui-input" placeholder="请输入当前交易密码"/ name="password" maxlength="6" onblur="oldpwdValidator()">
             </div>
-            <div class="mui-input-row">
+            <div class="mui-input-row bt">
                 <label>新交易密码</label>
                 <input id="password" type="password" class="mui-input-clear mui-input" placeholder="请输入6位新交易密码"/ name="password" maxlength="6" onblur="pwdValidator()">
             </div>

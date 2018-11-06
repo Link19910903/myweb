@@ -44,7 +44,6 @@
 }
 .logout {
   width: 60px;
-  height: 21px;
   font-size: 15px;
   color:#999999;
 }
@@ -98,8 +97,8 @@
   padding: 0;
 }
 .server {
-  background-color: #F6F6F6;
-  border-top: 1px solid #ccc;
+  background-color: #FAFAFA;
+  /* border-top: 1px solid #ccc; */
   padding: 3rem 0 2rem;
 }
 .txtcenter {
