@@ -1,8 +1,8 @@
-var isAgree = localStorage.getItem('isAgree');
-if (isAgree === 'agree') {
-	$('#popup').attr('style','display: none')
-    $('#backdrop').attr('style','display: none')
-}
+// var isAgree = localStorage.getItem('isAgree');
+// if (isAgree === 'agree') {
+// 	$('#popup').attr('style','display: none')
+//     $('#backdrop').attr('style','display: none')
+// }
 document.getElementById("confirmBtn").addEventListener('tap', function() {
 	var btnArray = ['取消', '确定'];
 	mui.confirm('', '是否确定退出', btnArray, function(e) {
@@ -39,5 +39,21 @@ document.getElementById("agree").addEventListener('tap',function(){
 	localStorage.setItem('isAgree','agree');
     $('#popup').attr('style','display: none')
     $('#backdrop').attr('style','display: none')
+    move();
 })
 
+//实现滚动条无法滚动
+var mo=function(e){e.preventDefault();};
+console.log(mo)
+
+/***禁止滑动***/
+function stop(){
+        document.body.style.overflow='hidden';
+        document.addEventListener("touchmove",mo,false);//禁止页面滑动
+}
+stop();
+/***取消滑动限制***/
+function move(){
+        document.body.style.overflow='';//出现滚动条
+        document.removeEventListener("touchmove",mo,false);
+}
