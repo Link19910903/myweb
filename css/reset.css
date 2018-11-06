@@ -22,7 +22,7 @@ a {
     outline:none;
 }
 a:hover {
-    text-decoration:underline;
+    text-decoration:none;
 }
 var, em, strong {
     font-style:normal;
