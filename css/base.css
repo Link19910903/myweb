@@ -178,9 +178,7 @@ a.lianxi {
     width: 250px;
     height: 44px;
 } */
-.mui-popup-inner:after {
-    height: 0;
-}
+
 .mui-popup-button:first-child:last-child {
     /* border-radius: 0 0 6px 6px; */
 }
