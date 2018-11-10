@@ -39,3 +39,7 @@ p.time {
 .orange {
 	color: #FF793E;
 }
+.mui-bar .mui-segmented-control {
+	top: -1px;
+	border-top: 1px solid #F5F5F5;
+}

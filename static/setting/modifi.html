@@ -5,7 +5,7 @@
 	    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
 	    <meta name="apple-mobile-web-app-capable" content="yes"/>
 	    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
-	    <title>设置成功</title>
+	    <title>修改成功</title>
 	    <link rel="stylesheet" href="assets/font/iconfont.css">
 	    <link href="../../assets/mui/css/mui.min.css" rel="stylesheet"/>
 	    <link rel="stylesheet" href="../../css/changelogin.css">
@@ -19,25 +19,29 @@
 			<span class="fanhui">
 				<img src="../../images/返回@2x.png" style="width:19px;height: 19px;position: absolute;top:10px;left:10px">
 			</span>
-				设置成功
+				修改成功
 		</a>
 		</header>
 		<div class="mui-content">
 	        <div class="success">
 	    		<div style="position: relative">
 	    			<img src="../../images/success@2x.png" style="width: 100px;height: 100px">
-	    			<div class="szcg">设置成功</div>
+	    			<div class="szcg">修改成功</div>
 	    		</div>
-	        	<p class="again">交易密码设置成功，您可重新申请提现</p>
+	        	<p class="again">登陆密码修改成功</p>
 	        </div>
 
 	        <div class="mui-content-padded">
 	            <button id="check-btn" class="mui-btn mui-btn-block mui-btn-danger border-radius">
-	            	去提现
+	            	返回首页
 	            </button>
 	        </div>
 	    </div>
 	    <script type="text/javascript" src="../../assets/zepto/zepto.min.js"></script>
-	    <script type="text/javascript" src="../../js/setsuccess.js"></script>
+	    <script>
+	    	$('#check-btn').on('click',function(){
+				window.location.href='../../index.html'
+			})
+	    </script>
     </body>
 </html>

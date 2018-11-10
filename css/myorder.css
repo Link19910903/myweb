@@ -19,6 +19,7 @@ body {
 }
 .mui-segmented-control.mui-segmented-control-inverted{
 	border-top:0px solid #eee;
+	color: #666666;
 }
 .mui-slider .mui-slider-group .mui-slider-item {
 	/*background-color: pink;*/
@@ -58,8 +59,8 @@ p {
 	width: 100%;
 	overflow: hidden;
 	font-size: 0.9rem;
-	padding: 0 1rem;
-	color:#555555;
+	padding: 10px 1rem;
+	color:#333333;
 	margin-top: 0.5rem;
 	background-color: #fff;
 }

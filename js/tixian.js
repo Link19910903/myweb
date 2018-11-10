@@ -5,11 +5,16 @@ window.onload = function() {
     var oGetMoneys = document.getElementById("getmoneys");
     var oGetOut = document.getElementById("getout");
     var oKyye = document.getElementsByClassName("kyye")[0];
-
+    var num = null;
 
     oGetMoneys.oninput = function() //监听用户的输入给出相应提示。
     {
-        if (oGetMoneys.value == "") {
+        var reg = /(^[1-9]([0-9]+)?(\.[0-9]{1,2})?$)|(^(0){1}$)|(^[0-9]\.[0-9]([0-9])?$)/
+        if(!reg.test(oGetMoneys.value)){
+            oGetOut.style.opacity = 1;
+            document.getElementById("getout").disabled='';
+          }
+        if (oGetMoneys.value == "" || oGetMoneys.value <= 0) {
             oGetOut.style.opacity = 0.4;
             document.getElementById("getout").disabled='none';
 
@@ -34,6 +39,10 @@ window.onload = function() {
     //全部提现
     $('#getall').on('click',function(){
             oGetMoneys.value = okyMOneys;
+            oGetOut.style.opacity = 1;
+            document.getElementById("getout").disabled='';
+            var num = $('#getmoneys').val()
+            $('#jine').html('<span style="font-size: 28px;">￥</span>' + num)
     });
 
 };
@@ -91,7 +100,7 @@ document.getElementById("getout").addEventListener('click',function(){
 //获取输入的金额并传入弹出框中
 function getNum(){
     var num = $('#getmoneys').val()
-    $('#jine').text('￥'+num)
+    $('#jine').html('<span style="font-size: 28px;">￥</span>' + num)
 }
 
 //密码输入错误弹出提示框

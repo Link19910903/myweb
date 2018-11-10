@@ -1,5 +1,6 @@
 $(function(){
   //获取验证码
+  $('#btn').click()
   //确定按钮点击事件
   $('#check-btn').on('click',function(){
     validateForm()

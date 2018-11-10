@@ -22,10 +22,26 @@
     <body>
     	<header id="header" class="mui-bar mui-bar-nav">
 			<h1 class="mui-title"></h1>
-		<a class="mui-action-back" href="../../index.html">
-			<span class="mui-icon mui-icon-left-nav"></span>
+		<a class="mui-action-back" href="../../index.html" style="line-height: 42px;padding-left: 33px;">
+			<span class="fanhui">
+				<img src="../../images/返回@2x.png" style="width:19px;height: 19px;position: absolute;top:10px;left:10px">
+			</span>
 				我的订单
 		</a>
+		<div id="segmentedControl" class="mui-segmented-control mui-segmented-control-inverted " style="border-top: 1px solid #F9F9F9">
+			<a class="mui-control-item mui-active" href="#item1">
+				全部
+			</a>
+			<a class="mui-control-item" href="#item2">
+				待发货
+			</a>
+			<a class="mui-control-item" href="#item3">
+				已发货
+			</a>
+			<a class="mui-control-item" href="#item4">
+				已完成
+			</a>
+		</div>
 		</header>
 		<div class="mui-content">
 			<div class="isOrder" style="display:block">
@@ -33,11 +49,11 @@
 				<p class="none">您当前没有订单</p>
 			</div>
 			<div style="padding: 0 0 0rem 0;">
-				<div id="segmentedControl" class="mui-segmented-control mui-segmented-control-inverted mui-segmented-control-primary">
-					<a class="mui-control-item mui-active" href="#item1">
+				<!-- <div id="segmentedControl" class="mui-segmented-control mui-segmented-control-inverted mui-segmented-control-primary">
+					<a class="mui-control-item mui-active" href="#item1" style="color:#66666">
 						全部
 					</a>
-					<a class="mui-control-item" href="#item2">
+					<a class="mui-control-item" href="#item2" style="color:#66666">
 						待发货
 					</a>
 					<a class="mui-control-item" href="#item3">
@@ -46,9 +62,9 @@
 					<a class="mui-control-item" href="#item4">
 						已完成
 					</a>
-				</div>
+				</div> -->
 			</div>
-			<div>
+			<div style="margin-top: 55px">
 				<div id="item1" class="mui-control-content mui-active">
 					<div class="item">
 						<div class="state bt">

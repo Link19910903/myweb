@@ -42,7 +42,7 @@ body {
     /* position:static; */
     /*background-color: #fff;*/
     background: #fff url('../images/logo@2x.png') no-repeat center center;
-    background-size:  90px 30px;
+    background-size:  100px 40px;
     height: 42px;
 
 }
@@ -54,7 +54,8 @@ body {
 .mui-btn-red.mui-active:enabled,
 .mui-btn-red:enabled:active {
     background-color: #FF793E;
-    border: 1px solid #FF793E;
+    /* border: 1px solid #FF793E; */
+    border: 0;
 }
 
 .mui-bar .mui-btn-link {
@@ -120,6 +121,7 @@ input:-ms-input-placeholder {
 }
 .mui-input-group .mui-input-row {
 	height: 50px;
+    margin-left: 15px;
 }
 .mui-bar-nav {
 	box-shadow: none;
@@ -176,3 +178,64 @@ a.lianxi {
     width: 250px;
     height: 44px;
 } */
+.mui-popup-inner:after {
+    height: 0;
+}
+.mui-popup-button:first-child:last-child {
+    /* border-radius: 0 0 6px 6px; */
+}
+/* .mui-popup-inner {
+    border-radius: 6px 6px 0 0;
+} */
+#agree {
+    box-shadow: 0px -11px 0px rgba(255, 255, 255, 0.5);
+}
+.mui-popup {
+    top: 240px;
+}
+.mui-popup.xieyi {
+    top: 50%;
+}
+.fanhhui img{
+    width: 20px;
+    height: 20px;
+}
+.tb {
+    border-top: 1px solid #F2F2F2;
+}
+.mui-btn-danger, .mui-btn-negative, .mui-btn-red {
+    border: 0;
+}
+.szcg {
+    width: 100px;
+    font-size: 17px;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translate(-50%)
+}
+.again {
+    font-size: 15px;
+}
+.mui-btn-block {
+    font-size: 15px;
+}
+.mui-popup-inner {
+    background: rgba(255,255,255,1);
+}
+.mui-popup-button {
+    background: rgba(255,255,255,1);
+}
+.mui-popup-title {
+    font-size: 15px;
+}
+.mui-popup-button {
+    font-size: 15px;
+}
+.mui-bar .mui-segmented-control {
+    top: -1px;
+}
+.mui-bar {
+    padding-left: 0;
+    padding-right: 0;
+}

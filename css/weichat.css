@@ -243,10 +243,11 @@
     }
     .rmb{
       color: #000;
-    	font-size: 27px;
+      font-weight: 700;
+    	font-size: 34px;
     	position: absolute;
-    	left: 36px;
-    	top: 57px;
+    	left: 19px;
+    	top: 54px;
     	z-index: 9999;
     }
     .t-input{

@@ -19,14 +19,16 @@
     <body>
     	<header id="header" class="mui-bar mui-bar-nav">
 			<h1 class="mui-title"></h1>
-		      <a class="mui-action-back" href="../../index.html">
-				<span class="mui-icon mui-icon-left-nav"></span>
-				设置交易密码
-			 </a>
+		      <a class="mui-action-back" href="../../index.html" style="line-height: 42px;padding-left: 33px;">
+            <span class="fanhui">
+                <img src="../../images/返回@2x.png" style="width:19px;height: 19px;position: absolute;top:10px;left:10px">
+            </span>
+                设置交易密码
+        </a>
 		</header>
 		<div class="mui-content">
         <form class="mui-input-group">
-            <div class="mui-input-row">
+            <div class="mui-input-row bt">
                 <label>新交易密码</label>
                 <input id="password" type="password" class="mui-input-clear mui-input" placeholder="请输入6位新交易密码"/ name="password" maxlength="6" onblur="pwdValidator()">
             </div>
@@ -43,5 +45,12 @@
             <button id="check-btn" class="mui-btn mui-btn-block mui-btn-danger border-radius" disabled="disabled">确认</button>
         </div>
     </div>
+    <script>
+        $(function(){
+            $('#check-btn').on('click',function(){
+                window.location.href='../setting/psdsuccess.html'
+            })
+        })
+    </script>
     </body>
 </html>

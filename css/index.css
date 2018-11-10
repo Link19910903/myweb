@@ -5,7 +5,7 @@
 .mui-card-footer, .mui-card-header {
   padding:0 16px;
   background: url('../images/logo@2x.png') no-repeat center center;
-  background-size: 90px 30px;
+  background-size: 100px 40px;
 }
 .mui-card {
   margin: 0px;
@@ -48,7 +48,7 @@
   color:#999999;
 }
 .tx {
-  margin-top: 20px;
+  margin-top: 19px;
   margin-right: 10px;
   text-align: center;
   font-size: 15px;
@@ -68,7 +68,7 @@
 .num  {
     width: 180px;
     height: 4rem;
-    padding: 10px 0 0 10px;
+    padding: 10px 0 0 28px;
 }
 
 .mui-card{
@@ -210,7 +210,7 @@
 }
 p {
   color: #666;
-  font-size: 15px;
+  font-size: 16px;
   margin-bottom: 5px;
 }
 .number {
@@ -236,6 +236,8 @@ p.banks {
   padding-left: 27px;
 }
 p.cardnum {
+  font-weight: 700;
+  letter-spacing: 1px;
   font-size: 18px;
   color: #825921;
   padding-top: 20px;
@@ -243,6 +245,8 @@ p.cardnum {
 p.mycard {
   color: #333333;
   position: absolute;
+  font-weight: 700;
+  letter-spacing: 2px;
   top: 18px;
   left: 6px;
 }
@@ -259,4 +263,15 @@ p.txtcenter {
   transform: translate(-50%);
   overflow: hidden;
   width: 360px;
+}
+.qudao {
+  padding-left: 28px;
+}
+.qudao i {
+  position: absolute;
+  top: 20px;
+  left: 18px;
+}
+.mui-card-footer:before, .mui-card-header:after {
+  background-color: #eee;
 }

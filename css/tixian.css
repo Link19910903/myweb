@@ -7,7 +7,7 @@
     width: 75%;
     height: 50px;
     line-height: 24px;
-    font-size: 27px;
+    font-size: 46px;
     color: #000000;
     /* padding: 5px 8px; */
     border: 0px;
@@ -76,20 +76,20 @@
 .guanbi img {
     position: absolute;
     left: 20px;
-    top: 19px;
+    top: 15px;
 }
 .tixianbox {
     padding: 10px 10px;
     position: relative;
     width: 330px;
     height: 100px;
-    border-bottom: 1px solid  #EBEBEA
 }
 #getmoneys {
     position: absolute;
     top: 40px;
     left: 57px;
     z-index: 999;
+    font-weight: 700;
 }
 
 .mui-popup-inner.tixian {
@@ -108,20 +108,27 @@
 }
 #getall {
     position: absolute;
-    top: 193px;
-    left: 224px;
+    font-size: 13px;
+    top: 190px;
+    left: 200px;
     color: #7FB3FD;
 }
 .mui-popup-title {
     color: #727272;
 }
 .mui-popup-button {
-    color: #AFAFAF;
-    font-size: 1rem;
+    color: #333333;
+    font-size: 15px;
 }
 .mui-popup-button.mui-popup-button-bold {
     font-weight: 400;
 }
 .mui-bar-nav~.mui-content.tixian {
     padding-top: 0;
+}
+.line {
+    width: 85%;
+    height: 1px;
+    background-color: #EBEBEA;
+    margin: 0 auto;
 }
