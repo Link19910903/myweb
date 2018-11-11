@@ -3,6 +3,9 @@
 	justify-content: space-between;
 	padding: 0.5rem;
 }
+#header {
+	position: fixed;
+}
 .box p {
 	padding-right: 2rem;
 }
@@ -14,6 +17,7 @@
 	background-color: #FF8A2D;
 	height: 60px;
 	line-height: 60px;
+	margin-top: 42px;
 }
 .item {
 	position: relative;
@@ -49,6 +53,7 @@
 }
 .bianhao {
 	padding: 15px 0 20px 15px;
+	margin-bottom: 20px;
 }
 .gray {
 	color: #999999
